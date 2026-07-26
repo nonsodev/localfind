@@ -1,0 +1,30 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+chromadb==0.5.20
+pypdf==4.3.1
+pdfplumber==0.11.4
+python-docx==1.1.2
+pydantic>=2.10.0
+python-multipart==0.0.9
+aiofiles==24.1.0
+openai>=1.0.0
+
+# Multimodal RAG support
+# Use compatible versions for Python 3.12 and Apple Silicon
+torch>=2.0.0
+torchvision>=0.15.0
+open-clip-torch>=2.20.0
+pillow>=10.0.0
+
+# Audio transcription (replaces CLAP)
+faster-whisper>=1.0.0
+librosa>=0.10.2
+# ffmpeg required at system level: brew install ffmpeg (macOS)
+
+# Agent support
+openai-agents==0.0.13
+httpx>=0.27.0
+# openai already included above
+
+# Utilities
+python-dotenv>=1.0.0
